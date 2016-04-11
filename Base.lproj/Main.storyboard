@@ -52,13 +52,35 @@
                                     <constraint firstAttribute="width" secondItem="wpj-uK-aXV" secondAttribute="height" multiplier="300:169" id="V4l-rC-4Sm"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FUc-qT-pq7">
+                                <rect key="frame" x="200" y="510" width="200" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gu9-rB-3DD">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.32051120630000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Sign in"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgv-OR-JPY">
+                                        <rect key="frame" x="0.0" y="40" width="200" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.32051120630000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Sign up with email"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="lfW-x9-Bud"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="FUc-qT-pq7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Al-oZ-6hi"/>
                             <constraint firstItem="wpj-uK-aXV" firstAttribute="top" secondItem="759-tE-rw3" secondAttribute="bottom" constant="15" id="C7d-97-RCL"/>
                             <constraint firstItem="759-tE-rw3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GN9-7d-ZOf"/>
                             <constraint firstItem="759-tE-rw3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="Gsf-hO-qYk"/>
                             <constraint firstItem="wpj-uK-aXV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Llw-4W-DLw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FUc-qT-pq7" secondAttribute="bottom" constant="20" id="iKs-oc-2uQ"/>
                             <constraint firstItem="wpj-uK-aXV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="jSb-CF-2Ey"/>
                         </constraints>
                     </view>
