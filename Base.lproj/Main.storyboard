@@ -52,8 +52,8 @@
                                     <constraint firstAttribute="width" secondItem="wpj-uK-aXV" secondAttribute="height" multiplier="300:169" id="V4l-rC-4Sm"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FUc-qT-pq7">
-                                <rect key="frame" x="200" y="510" width="200" height="70"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FUc-qT-pq7">
+                                <rect key="frame" x="201" y="510" width="200" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gu9-rB-3DD">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
@@ -69,8 +69,11 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="lfW-x9-Bud"/>
+                                    <constraint firstAttribute="width" constant="200" id="lfW-x9-Bud">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                    </constraint>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=regular" axis="horizontal" distribution="fillEqually"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -78,7 +81,9 @@
                             <constraint firstItem="FUc-qT-pq7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Al-oZ-6hi"/>
                             <constraint firstItem="wpj-uK-aXV" firstAttribute="top" secondItem="759-tE-rw3" secondAttribute="bottom" constant="15" id="C7d-97-RCL"/>
                             <constraint firstItem="759-tE-rw3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GN9-7d-ZOf"/>
-                            <constraint firstItem="759-tE-rw3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="Gsf-hO-qYk"/>
+                            <constraint firstItem="759-tE-rw3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="Gsf-hO-qYk">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstItem="wpj-uK-aXV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Llw-4W-DLw"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FUc-qT-pq7" secondAttribute="bottom" constant="20" id="iKs-oc-2uQ"/>
                             <constraint firstItem="wpj-uK-aXV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="jSb-CF-2Ey"/>
